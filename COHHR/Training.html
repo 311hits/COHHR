@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title></title>
-    </head>
-    <body style="background:url(kendo/styles/images/backgroundcolor.jpg)">
-        <br><br>
-        <font color=white sixe=+3><b>Holding place for the TRAINING feature</b></font>
+        <title>Training</title>
+    
+    <!-- Scripts -->
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/Popups.js"></script>
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/1.6.12/everlive.all.min.js"></script>
+     <style>
+     body{
+         border-style: solid;
+         border-width:5px; 
+         border-color:#1c75bc;
+         margin: 5px 5px 5px 5px;
+         
+     }   
         
-        <br><br>
-        <footer data-role="footer" align="center">
-						<figure class="white"  align="center">
+        
+     </style>  
+    </head>
+    <body>
+        <header>
+            <br>
+        <div id="part" align="center" style="color:#036bb6;"><b> TRAINING</b></div>
+            <center><font size=-1 color="#036bb6">(select a link below)</font></center>
+        <br>
+        <ul size="50%">
+            <br><b> 
+            <!--  
+            <li><a style="text-decoration: none" href="http://www.houstontx.gov/ldc/">Learning and Development Center (LDC)</a></li>
+            -->
+            <li>
+              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupTraining()">
+                    <font size=+0 color="#0492c2">Learning and Development Center (LDC)</font>
+                  </a>
+                </li>
+            <br>
+            </b></font>
+		</ul>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </header> 
+         <footer>
+               <figure class="white"  align="center">
 							<a href="index.html">
 								<img src="kendo/styles/images/home.png" width="20%" height="20%">
                             </a>
-                        </figure>
-        </footer>   
-        
+                </figure>
+                <br>
+       </footer> 
     </body>
 </html>

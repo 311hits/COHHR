@@ -10,21 +10,59 @@
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'none',
                 skin: 'nova',
+               
                 initial: 'components/home/view.html'
             });
         });
     };
 
     if (window.cordova) {
-        document.addEventListener('deviceready', function() {
-            if (navigator && navigator.splashscreen) {
-                navigator.splashscreen.hide();
-            }
-            bootstrap();
-        }, false);
-    } else {
-        bootstrap();
-    }
+    document.addEventListener('deviceready', function() {
+     if (navigator && navigator.splashscreen) {
+               navigator.splashscreen.hide(); 
+             
+                 /* Push notifications Code */
+         
+         var isAndroid = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
+          if (isAndroid) {
+                
+                var everlive = new Everlive({
+                    appId: 'vdrlc9q5d82he4rz',
+                });
+
+                var devicePushSettings = {
+                    iOS: {
+                        badge: 'true',
+                        sound: 'true',
+                        alert: 'true'
+                    },
+                    android: {
+                        projectNumber: '829404370623'
+                    },
+                    wp8: {
+                        channelName: 'EverlivePushChannel'
+                    },
+                    notificationCallbackIOS: onPushNotificationReceived,
+                    notificationCallbackAndroid: onPushNotificationReceived,
+                    notificationCallbackWP8: onPushNotificationReceived
+                };
+
+                everlive.push.register(devicePushSettings, function() {
+                  //  alert("Successful registration in Telerik Platform. You are ready to receive push notifications.");
+                }, function(err) {
+                    alert("Error: " + err.message);
+                }); 
+                
+                //push notifications code ends here  
+         }
+                             
+                
+           } 
+         bootstrap();
+       }, false);
+   } else {
+      bootstrap();
+} 
 
     app.keepActiveState = function _keepActiveState(item) {
         var currentItem = item;
@@ -53,6 +91,11 @@
             window.event.returnValue = false;
         }
     };
+    
+    function onPushNotificationReceived(e) {
+  alert(JSON.stringify(e));
+};
+    
 
 }());
 
@@ -70,17 +113,7 @@ function onButtonDown() {
 }
 }
 
-
-
-function exitFromApp() {
-    navigator.notification.confirm(
-        'Close the app?',
-        closeApp,
-        'Super Bowl 2017',
-        'Yes, No'
-        );
-}
-     
+    
 function closeApp(buttonIndex) {
     if (buttonIndex == 1) {
         navigator.app.exitApp()
@@ -90,9 +123,6 @@ function closeApp(buttonIndex) {
     }
 }
 
-
-
-
  function openNav() {
            document.getElementById("mySidenav").style.width = "270px";
             }
@@ -101,12 +131,10 @@ function closeApp(buttonIndex) {
            document.getElementById("mySidenav").style.width = "0";
             }
 
-function openNav2() {
-           document.getElementById("mySidenav2").style.width = "250px";
-            }
-function closeNav2() {
-           document.getElementById("mySidenav2").style.width = "0";
-            }
 
+app.sendFeedback = function ()
+    {
+        feedback.showFeedback();
+    }
 
 // END_CUSTOM_CODE_kendoUiMobileApp

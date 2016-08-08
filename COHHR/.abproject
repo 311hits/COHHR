@@ -13,6 +13,7 @@
     "2"
   ],
   "iOSBackgroundMode": [
+    "location",
     "remote-notification"
   ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
@@ -42,5 +43,12 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "CordovaPluginVariables": {
+    "com.telerik.feedback": {
+      "API_KEY": "vdrlc9q5d82he4rz",
+      "API_URL": "https://platform.telerik.com/feedback/api/v1",
+      "ENABLE_SHAKE": "True"
+    }
+  }
 }

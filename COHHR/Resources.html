@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title></title>
-    </head>
-    <body style="background:url(kendo/styles/images/backgroundcolor.jpg)">
-        <br><br>
-        <font color=white sixe=+3><b>Holding place for the Resources feature</b></font>
+        <title>Resources</title>
         
-        <br><br>
-        <footer data-role="footer" align="center">
-						<figure class="white"  align="center">
+         <!-- Scripts -->
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/Popups.js"></script>
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/1.6.12/everlive.all.min.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <br>
+        <div id="part" align="center" style="color:#036bb6"><b> RESOURCES</b></div>
+              <center><font size=-1 color="#036bb6">(select a link below)</font></center>
+    
+        <ul size="50%">
+            <br><font size=+0 color="#0492c2"><b>
+            <!--
+              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/benefits.html"><font size=+0 color="#0492c2">Benefits</a></li><br>
+              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/careers.html"><font size=+0 color="#0492c2">City Careers</a></li><br>
+              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/eap.html"><font size=+0 color="#0492c2">Employee Assistance Program</a></li><br>
+              <li><a style="text-decoration: none" href="http://houstontx.gov/hr/holidays.html"><font size=+0 color="#0492c2">Holiday Calendar</a></li><br>
+              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/riskmgmt.html"><font size=+0 color="#0492c2">Risk Management</a></li><br>
+              <li><a style="text-decoration: none" href="http://www.cohemployeenews.com/home-wellness"><font size=+0 color="#0492c2">Wellness</a></li><br>
+              -->
+            
+              <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupBenefits()">
+                 <font size=+0 color="#0492c2">Benefits</font>
+                 </a>
+              </li>
+            <br>
+            <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupCareers()">
+                 <font size=+0 color="#0492c2">City Careers</font>
+                 </a>
+              </li>
+             <br>
+            <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupEAP()">
+                 <font size=+0 color="#0492c2">Employee Assistance Program</font>
+                 </a>
+              </li>
+             <br>
+            <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupHolidays()">
+                 <font size=+0 color="#0492c2">Holiday Calendar</font>
+                 </a>
+              </li>
+             <br>
+            <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupRiskmgmt()">
+                 <font size=+0 color="#0492c2">Risk Management</font>
+                 </a>
+              </li>
+             <br>
+            <li>
+                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupWellness()">
+                 <font size=+0 color="#0492c2">Wellness</font>
+                 </a>
+              </li>
+                   <br>
+            </b></font>
+		</ul>
+        <br><br><br><br><br>
+        </header> 
+         <footer>
+               <figure class="white"  align="center">
 							<a href="index.html">
 								<img src="kendo/styles/images/home.png" width="20%" height="20%">
                             </a>
-                        </figure>
-        </footer>   
-        
+                </figure>
+                <br>
+       </footer> 
     </body>
 </html>

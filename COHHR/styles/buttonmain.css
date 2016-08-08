@@ -1,0 +1,152 @@
+
+#pushApp.noappid-scrn {
+    padding: 1em;
+    background-color: #2d3e50;
+    color: #fff;
+    font-size: .85em;
+    font-family: "Open Sans", sans-serif;
+}
+
+#pushApp.noappid-scrn p {
+    color: #e4e4e4;
+}
+
+#pushApp.noappid-scrn p strong,
+#pushApp.noappid-scrn p span {
+    color: #fff;
+}
+
+#pushApp.noappid-scrn p span {
+    font-weight: 600;
+}
+
+/* KendoUI Overwrites */
+
+.km-flat .km-loader {
+	background: rgba(0, 0, 0, .5);
+}
+
+.km-flat .km-rowinsert,
+.km-flat .km-state-active,
+.km-flat .km-scroller-pull,
+.km-flat .k-slider-selection,
+.km-flat .km-touch-scrollbar,
+.km-flat .km-pages .km-current-page,
+.km-flat .k-slider .k-draghandle,
+.km-flat .k-slider .k-draghandle:hover,
+.km-flat .km-tabstrip .km-state-active,
+.km-flat .km-scroller-refresh.km-load-more,
+.km-flat .km-popup .k-state-hover,
+.km-flat .km-popup .k-state-focused,
+.km-flat .km-popup .k-state-selected,
+.km-flat .km-actionsheet > li > a:active,
+.km-flat .km-actionsheet > li > a:hover,
+.km-flat li.km-state-active .km-listview-link,
+.km-flat li.km-state-active .km-listview-label,
+.km-flat .km-listview-label input[type=radio]:checked,
+.km-flat .km-listview-label input[type=checkbox]:checked {
+    background: #3598db;
+}
+
+#pushApp.km-flat,
+#pushApp.km-flat .km-navbar,
+#pushApp.km-flat .km-content {
+    border: 0 none;
+    background-color: #2d3e50;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+#pushApp .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#pushApp .hide-text {
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+#pushApp .center-text {
+    text-align: center;
+}
+
+/* Buttons */
+
+#pushApp .btn {
+    position: relative;
+    margin: 0 -1px;
+    padding: .6em 1em;
+    border: 0 none;
+    background-color: #3598db;
+    font-size: 1.2rem;
+}
+
+#pushApp .btn-action {
+    background-color: #1bbc9b;
+}
+
+#pushApp .btn-large {
+    display: block;
+}
+
+/* App Header */
+
+#pushApp.km-flat.km-on-ios.km-black-translucent-status-bar .km-header {
+    min-height: 20px;
+    background-color: #2d3e50;
+}
+
+#pushApp.km-flat .km-header .km-navbar {
+    min-height: 3.15em;
+}
+
+#pushApp.km-flat.km-on-ios.km-black-translucent-status-bar .km-header .km-navbar {
+    min-height: 4.5em;
+}
+
+#pushApp.km-flat .km-header .km-view-title {
+    margin-top: .4em;
+    font-size: 1rem;
+}
+
+#pushApp.km-flat.km-on-ios.km-black-translucent-status-bar .km-header .km-view-title {
+  margin-top: .4em;
+}
+
+/* App Footer */
+
+#pushApp .km-footer {
+    padding: 0 1em;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+#pushApp .km-footer p {
+    font-size: .75rem;
+}
+
+/* Welcome screen */
+
+#pushApp .app-logo,
+#pushApp .app-name {
+    margin-top: 1.5em;
+}
+
+#pushApp .app-logo {
+    width: 247px;
+    height: 32px;
+    background: transparent url(images/logo-telerik_devcloud.png) no-repeat 0 0;
+}
+
+#pushApp .app-name {
+    margin-bottom: 2.5em;
+}
+
+#pushApp .app-name small {
+    display: block;
+    font-weight: 400;
+    font-size: 1.15rem;
+}

@@ -209,7 +209,7 @@
     }
 
 .km-menu-e:after,
-.km-ques-e:before
+.km-menu-e:before
     {
         content: "\e0ba";
     }
@@ -254,5 +254,34 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+    
+    
+
+   
+/* Push buttons */    
+
+#pushApp .btn {
+    position: relative;
+    margin: 0 -1px;
+    padding: .6em 1em;
+    border: 0 none;
+    background-color: #3598db;
+    font-size: 1.2rem;
+}
+
+#pushApp .btn-action {
+    background-color: #1bbc9b;
+}
+
+#pushApp .btn-large {
+    display: block;
+}   
+   
+ 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
+    
+    
+    
+    
+    

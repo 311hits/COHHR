@@ -1,6 +1,7 @@
 {
   "CorePlugins": [
     "com.phonegap.plugins.PushPlugin@3.2.0",
+    "com.telerik.feedback@2.0.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
     "cordova-plugin-console",
