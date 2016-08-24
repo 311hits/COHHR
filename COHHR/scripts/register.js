@@ -32,15 +32,15 @@
         };
         
         var onAndroidPushReceived = function(args) {
-            alert('Android notification received: ' + JSON.stringify(args));
+            alert('1 Android notification received: ' + JSON.stringify(args));
         };
         
         var onIosPushReceived = function(args) {
-            alert('iOS notification received: ' + JSON.stringify(args));
+            alert('2 iOS notification received: ' + JSON.stringify(args));
         };
         
         var onWP8PushReceived = function (args) {
-            alert('Windows Phone notification received: ' + JSON.stringify(args));
+            alert('3 Windows Phone notification received: ' + JSON.stringify(args));
         };
 
 function registerForPush() {

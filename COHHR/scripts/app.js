@@ -15,6 +15,8 @@
             });
         });
     };
+    
+      
 
     if (window.cordova) {
     document.addEventListener('deviceready', function() {
@@ -23,8 +25,8 @@
              
                  /* Push notifications Code */
          
-         var isAndroid = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
-          if (isAndroid) {
+        
+  //   if (isAndroid) {
                 
                 var everlive = new Everlive({
                     appId: 'vdrlc9q5d82he4rz',
@@ -48,13 +50,13 @@
                 };
 
                 everlive.push.register(devicePushSettings, function() {
-                  //  alert("Successful registration in Telerik Platform. You are ready to receive push notifications.");
+               // alert("Successful registration in Telerik Platform. You are ready to receive push notifications.");
                 }, function(err) {
                     alert("Error: " + err.message);
                 }); 
                 
                 //push notifications code ends here  
-         }
+     //    }
                              
                 
            } 
