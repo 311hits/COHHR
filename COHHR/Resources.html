@@ -1,82 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Resources</title>
+    
+    <title>RESOURCES</title>
         
-     <!-- Scripts -->
     <script src="cordova.js"></script>
-    
-    
-  
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
     <script src="scripts/Popups.js"></script>
-     
-    
-        
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
+
     </head>
-    <body>
-        <header>
-            <br>
-        <div id="part" align="center" style="color:#036bb6"><b> RESOURCES</b></div>
-              <center><font size=-1 color="#036bb6">(select a link below)</font></center>
-    
-        <ul size="50%">
-            <br><font size=+0 color="#0492c2"><b>
-            <!--
-              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/benefits.html"><font size=+0 color="#0492c2">Benefits</a></li><br>
-              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/careers.html"><font size=+0 color="#0492c2">City Careers</a></li><br>
-              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/eap.html"><font size=+0 color="#0492c2">Employee Assistance Program</a></li><br>
-              <li><a style="text-decoration: none" href="http://houstontx.gov/hr/holidays.html"><font size=+0 color="#0492c2">Holiday Calendar</a></li><br>
-              <li><a style="text-decoration: none" href="http://www.houstontx.gov/hr/riskmgmt.html"><font size=+0 color="#0492c2">Risk Management</a></li><br>
-              <li><a style="text-decoration: none" href="http://www.cohemployeenews.com/home-wellness"><font size=+0 color="#0492c2">Wellness</a></li><br>
-              -->
+    <body  style="background:url(kendo/styles/images/backgroundcolor.jpg)">
+        <header data-role="header">
+        <br>
+        <div id="part" align="center" style="color:#ffffff;"><b><font size=+1 face="Georgia">RESOURCES</font></b></div>
             
-              <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupBenefits()">
-                 <font size=+0 color="#0492c2">Benefits</font>
-                 </a>
-              </li>
+            <div  align="center">
+                  <img src="kendo/styles/images/image_white_line.png" width="70%" height="5px">
+            </div>
+            
+        <br><br>
+            <b>
+              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupBenefits()">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Benefits</font>
+               </a>
+            <br><br>
+              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupCareers()">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;City Careers</font>
+               </a>
+            <br><br>
+                <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupEAP()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Employee Assistance</font>
+               </a>
+            <br><br>
+                <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupHolidays()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Holiday Calendar</font>
+               </a>
+            <br><br>
+              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupRiskmgmt()">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                    <font size=+0 color="#ffffff">&nbsp;&nbsp;Risk Management</font>
+                  </a>
+            <br><br>
+              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupWellness()">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                    <font size=+0 color="#ffffff">&nbsp;&nbsp;Wellness</font>
+                  </a>
             <br>
-            <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupCareers()">
-                 <font size=+0 color="#0492c2">City Careers</font>
-                 </a>
-              </li>
-             <br>
-            <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupEAP()">
-                 <font size=+0 color="#0492c2">Employee Assistance Program</font>
-                 </a>
-              </li>
-             <br>
-            <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupHolidays()">
-                 <font size=+0 color="#0492c2">Holiday Calendar</font>
-                 </a>
-              </li>
-             <br>
-            <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupRiskmgmt()">
-                 <font size=+0 color="#0492c2">Risk Management</font>
-                 </a>
-              </li>
-             <br>
-            <li>
-                 <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupWellness()">
-                 <font size=+0 color="#0492c2">Wellness</font>
-                 </a>
-              </li>
-                   <br>
-            </b></font>
-		</ul>
-        <br><br><br><br><br>
+            </b>
+       
         </header> 
-         <footer>
-               <figure class="white"  align="center">
-							<a href="index.html">
-								<img src="kendo/styles/images/home.png" width="20%" height="20%">
-                            </a>
-                </figure>
-                <br>
-       </footer> 
+        
+        <br><br><br><br><br><br>
+        
+        <footer data-role="footer" align="center">
+			<figure class="white"  align="center">
+				<a href="index.html">
+				<img src="kendo/styles/images/home.png" width="20%" height="20%">
+                </a>
+             </figure>
+        </footer>   
+        
     </body>
 </html>

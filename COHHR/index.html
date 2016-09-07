@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
+   <head>
+    <title>COHHR</title>
     <meta charset="utf-8">
     
     <!-- Styles -->
@@ -11,31 +11,57 @@
     <!-- Default Stylesheet -->
     <link href="styles/main.css" rel="stylesheet">
     
+<style>
+input[type=text] {
+    width: 76%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+}
+input[type=submit] {
+    width: 15%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+}
+    searchBox { 
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+</style>
+    
     <!-- Scripts -->
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
     <script src="scripts/Popups.js"></script>
-     
+    <!--<script src="scripts/register.js"></script>-->
     <script src="components/home/index.js"></script>
-    <script src="https://bs-static.cdn.telerik.com/1.6.12/everlive.all.min.js"></script>
-   
-</head>
+    <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
+    
+   </head>
+    
 <body id="kendoUiMobileApp"  style="background:url(kendo/styles/images/backgroundcolor.jpg)">
      <!-- Layout -->
-    
-    
-    
-     <div data-role="layout" data-id="main">
-                  <header data-role="header">
-                  <div data-role="navbar" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
-                
+       <div data-role="layout" data-id="main">
+             <header data-role="header">
+                 
+             <div data-role="navbar" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
                 <table align="left" style="position: relative;left:-15px"> 
                     <tr>
                         <td align="right" style="position: relative;left:20px"><span  onclick="openNav()">☰</span></td>
                     <td style="position: relative;right:-25px">
-                        <img src="kendo/styles/images/hr-white.png" width="60%" height="70%">
+                      <a href="javascript:void(0)" onclick="popupCOHHR()"><img src="kendo/styles/images/hr-white.png" width="60%" height="70%"></a>  
                     </td>
                      <td style="position: relative;left:-25px" align="left">                   
                           <p class="small">
@@ -46,17 +72,43 @@
                    </tr>
                  </table>
               </div>
-            <div style="position: relative;top:-35px" align="center">
+                    
+              <div style="position: relative;top:-35px" align="center">
                   <img src="kendo/styles/images/image_white_line.png" width="70%" height="5px">
-            </div>
-            
-                      <!--
-            <form method="get" action="/search" id="search" align="center">
-                <input type="text" placeholder="Search..." required style="position: relative;top:-10px;right:0px;width:65%;height:8px;border-radius:20px;padding:12px">
-                <input type="button" value="Search" style="position: relative;top:0px;right:0px;width:25%;height:8px;border-radius:20px;padding:12px; text-align: center">
-            </form>   
-                       -->
+              </div>  
                       
+         <!--
+         <form align="center">
+         <input type="text" name="search" placeholder="  Search HR Website">
+         <input type="submit" value="Go">
+         </form>
+         -->
+                      
+         <!--
+         <div id="fixedfooter" data-role="footer">
+               <gcse:searchresults></gcse:searchresults>   
+         </div>
+         -->
+                      
+    <!-- Implementing Google Search Engine -->
+    <script>
+       (function() {
+       var cx = '009236601727268289397:v93j178oixy';
+       var gcse = document.createElement('script');
+       gcse.type = 'text/javascript';
+       gcse.async = true;
+       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + 
+                                               '//cse.google.com/cse.js?cx=' + cx;
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(gcse, s);
+       })();
+       window.onload = function(){
+       document.getElementById('gsc-i-id1').placeholder = ' ';
+       };
+   </script>
+                                                                              <!--<gcse:search></gcse:search>-->
+     <div align="right" style="position: relative;left:30px;width: 88%;top:-10px"><gcse:searchbox-only></gcse:searchbox-only></div>
+
     <table width="98%" align="center">
         <tr width="100%">
             <td>
@@ -72,7 +124,6 @@
           </tr>
         <tr>
         <td></td></tr>
-        
         <tr width="100%">
             <td>
                  <a href="FAQs.html">
@@ -98,89 +149,64 @@
                   </a> 
             </td>
         </tr>
-     </table>  
-         <br>
-         <center>
-             
-             
- <!-- Implementing Google Search Engine -->
-        
- <script>
-  (function() {
-    var cx = '009236601727268289397:v93j178oixy';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-         
-     <!-- side menu navigation -->
+     </table>
+           
+     <br>
+           
+        <center>
+        <!-- side menu navigation -->
         <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><br>
-              <a style="position: relative;top:-25px"><img src="kendo/styles/images/button_coh_home2.png" width="50%"></a><br>
+              <a style="position: relative;top:-25px" href="javascript:void(0)" onclick="popupCOH()"><img src="kendo/styles/images/button_coh_home2.png" width="50%"></a><br>
               <a style="position: relative;top:-30px" href="About.html"><img id="resources" src="kendo/styles/images/button_slidemenu_about.png" width="80%" height="60%"></a>
               <a style="position: relative;top:-40px" href="Help.html"><img id="help" src="kendo/styles/images/button_slidemenu_help.png" width="80%" height="60%"></a> 
-                 
+              <a style="position: relative;top:-50px" href="Privacy.html"><img id="settings" src="kendo/styles/images/button_slidemenu_privacy.png" width="78%" height="58%"></a> 
          </div>
-         
-              <a class="nav-button" data-align="right" data-role="button" onclick="app.sendFeedback()">Touch or Shake for Feedback</a>
              
-                      
-                  <a id="Exit" data-icon="exit-e" style="visibility:hidden" onclick="AndroidExit()">
-                  <font color='white'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExit</font></a>
-             
+             <button data-role="button" onclick="showFeedback()">Provide feedback</button>
+             <a id="Exit" style="visibility:hidden" onclick="AndroidExit()">
+             <font color='white'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exit</b></font></a>
          </center>
+           
+    </header>
+   
+<div data-role="footer" style="background:url(kendo/styles/images/backgroundcolor.jpg)" align="center"></div>  
     
-        </header>
-    
-         <div id="fixedfooter" data-role="footer">
-               <gcse:searchresults></gcse:searchresults>   
-         </div>
-
-        <div id="fixedfooter" data-role="footer">
-               <gcse:search></gcse:search>   
-         </div>
-
-      <!-- Footer Tabstrip
-    
-        <div id="fixedfooter" data-role="footer">
+    <!-- Footer Tabstrip 
+        <div data-role="footer">
             <div data-role="tabstrip" id="navigation-container" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
-                <!--<a data-icon="ques-e" href="Help.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Help</a>
+                <a data-icon="home-e" href="." style="background:url(kendo/styles/images/backgroundcolor.jpg)">Home</a>
                 <a data-icon="search-e" href="Search.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Search</a>
-                <a data-icon="info-e" href="AppInfo.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">App Info</a>
-                <a id="Exit" data-icon="exit-e" style="visibility:hidden" onclick="AndroidExit()" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a> -->
+                <a data-icon="exit-e"  href="#" onclick="androidExit()" style="display:none;background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a>
             </div>
-         </div>
-    -->
-   </div>
+        </div> -->
+    
+    </div>
+    
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-   <style>
-      p.small {
-         line-height: 110%;
-      }
-      p.big {
-         line-height: 200%;
-      }
+    <style>
+       p.small {
+          line-height: 110%;
+       }
+       p.big {
+          line-height: 200%;
+       }
    </style> 
   <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
     
-  <script>
-             
-                 var isAndroid = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
-                 if (isAndroid) { 
-                     document.getElementById("Exit").style.visibility = "visible" ;
-                 }
-                     
-                  function AndroidExit(){
-                     navigator.app.exitApp();
-                    
-                 }
+      <script>
+      var isAndroid = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
+      if (isAndroid) { 
+          document.getElementById("Exit").style.visibility = "visible" ;
+      }
+      function AndroidExit(){
+               navigator.app.exitApp();
+      }
+      function showFeedback() {
+               feedback.showFeedback();
+      }
+      </script>
     
-    
-    </script> 
-</body>
+   </body>
 </html>

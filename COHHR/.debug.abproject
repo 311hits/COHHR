@@ -1,5 +1,1 @@
-{
-  "CorePlugins": [
-    "cordova-plugin-splashscreen"
-  ]
-}
+{}

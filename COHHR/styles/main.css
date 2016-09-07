@@ -190,6 +190,12 @@
         content: "\e07f";
     }
 
+.km-home-e:after,
+.km-home-e:before
+    {
+        content: "\e0af";
+    }
+
 .km-ques-e:after,
 .km-ques-e:before
     {
@@ -289,7 +295,6 @@
 }
 }
  
-
 /* END_CUSTOM_CODE_kendoUiMobileApp */
     
     

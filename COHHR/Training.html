@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Training</title>
     
-    <!-- Scripts -->
+    <title>TRAINING</title>
+        
     <script src="cordova.js"></script>
-    
-   
- 
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
     <script src="scripts/Popups.js"></script>
-    
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
+
     </head>
-    <body class="trainBackground">
-        <header>
-            <br>
-        <div id="part" align="center" style="color:#036bb6;"><b> TRAINING</b></div>
-            <center><font size=-1 color="#036bb6">(select a link below)</font></center>
+    
+    <body  style="background:url(kendo/styles/images/backgroundcolor.jpg)">
+        <header data-role="header">
         <br>
-        <ul size="50%">
-            <br><b> 
-            <!--  
-            <li><a style="text-decoration: none" href="http://www.houstontx.gov/ldc/">Learning and Development Center (LDC)</a></li>
-            -->
-            <li>
+        <div id="part" align="center" style="color:#ffffff;"><b><font size=+1 face="Georgia">TRAINING</font></b></div>
+            
+            <div  align="center">
+                  <img src="kendo/styles/images/image_white_line.png" width="70%" height="5px">
+            </div>
+            
+            <br><br>
+            <b>
               <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupLDC()">
-                    <font size=+0 color="#0492c2">Learning Development Center(LDC)</font>
-                  </a>
-                </li>
-            <br>
-            <li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Learning & Development Center</font>
+               </a>
+            <br><br>
               <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupTMS()">
-                    <font size=+0 color="#0492c2">Talent Management System(TMS)</font>
-                  </a>
-                </li>
-            <br>
-            <li>
-              <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupESS()">
-                    <font size=+0 color="#0492c2">Employee Self Service(ESS)</font>
-                  </a>
-                </li>
-            <br>
-            </b></font>
-		</ul>
-        <br><br><br><br><br><br><br><br><br><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Talent Management System</font>
+               </a>
+               <br><br>
+                <a style="text-decoration: none" href="javascript: void(0)" onclick="return popupESS()">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="kendo/styles/images/icon-bullet.png" width="5%" height="5%" >
+                  <font size=+0 color="#ffffff">&nbsp;&nbsp;Employee Self Service</font>
+               </a>
+            </b>
+       
         </header> 
-         <footer>
-               <figure class="white"  align="center">
-							<a href="index.html">
-								<img src="kendo/styles/images/home.png" width="20%" height="20%">
-                            </a>
-                </figure>
-                <br>
-       </footer> 
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <footer data-role="footer" align="center">
+			<figure class="white"  align="center">
+				<a href="index.html">
+				<img src="kendo/styles/images/home.png" width="20%" height="20%">
+                </a>
+             </figure>
+        </footer>   
+        
     </body>
 </html>

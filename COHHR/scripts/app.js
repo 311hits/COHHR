@@ -10,22 +10,17 @@
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'none',
                 skin: 'nova',
-               
                 initial: 'components/home/view.html'
             });
         });
     };
     
-      
-
     if (window.cordova) {
     document.addEventListener('deviceready', function() {
      if (navigator && navigator.splashscreen) {
                navigator.splashscreen.hide(); 
              
                  /* Push notifications Code */
-         
-        
   //   if (isAndroid) {
                 
                 var everlive = new Everlive({
@@ -57,8 +52,7 @@
                 
                 //push notifications code ends here  
      //    }
-                             
-                
+                               
            } 
          bootstrap();
        }, false);
@@ -95,10 +89,17 @@
     };
     
     function onPushNotificationReceived(e) {
-  alert(JSON.stringify(e));
+       var str = JSON.stringify(e);
+       var obj = $.parseJSON(str);
+
+     navigator.notification.alert(
+         obj.payload.message, // message
+         alertDismissed, // callback
+         obj.payload.title, // title
+         'Done' // buttonName
+     );
 };
     
-
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp
@@ -132,11 +133,5 @@ function closeApp(buttonIndex) {
  function closeNav() {
            document.getElementById("mySidenav").style.width = "0";
             }
-
-
-app.sendFeedback = function ()
-    {
-        feedback.showFeedback();
-    }
 
 // END_CUSTOM_CODE_kendoUiMobileApp

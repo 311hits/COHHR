@@ -1,16 +1,1 @@
-{
-  "CorePlugins": [
-    "com.phonegap.plugins.PushPlugin@3.2.0",
-    "com.telerik.feedback@2.0.3",
-    "cordova-plugin-device",
-    "cordova-plugin-device-motion",
-    "cordova-plugin-device-orientation",
-    "cordova-plugin-dialogs",
-    "cordova-plugin-inappbrowser",
-    "cordova-plugin-media",
-    "cordova-plugin-splashscreen",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-vibration",
-    "org.apache.cordova.labs.keyboard"
-  ]
-}
+{}
