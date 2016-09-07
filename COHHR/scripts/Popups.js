@@ -81,4 +81,22 @@ function popupEmployeeRelInfo(url) {
                 return false;
    }
       
+function popupPrivacy(url) {    
+                newwindow = window.open('http://www.houstontx.gov/privacy.html','Privacy','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
+
+function popupCOH(url) {    
+                newwindow = window.open('http://www.houstontx.gov/','COH','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
+
+function popupCOHHR(url) {    
+                newwindow = window.open('http://www.houstontx.gov/hr/','COHHR','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
+
 
