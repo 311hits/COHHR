@@ -107,5 +107,15 @@ function popupGoogSearch(url){
                return false;                  
    }
 
+function popupJobApp(url) {    
+                newwindow = window.open('https://www.governmentjobs.com/careers/houston','JobApp','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
 
+function popupBenePage(url) {    
+                newwindow = window.open('http://www.houstontx.gov/hr/benefits.html','BenePage','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
 

@@ -2,6 +2,13 @@
 <html>
     <head>
         <title>FAQs</title>
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/Popups.js"></script>
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
     </head>
      <body style="background-color: #e4e4e4">
         <header>
@@ -11,7 +18,8 @@
             <tr>
                 <td>
                                 <div id="part-info1" align="left" style=""><b>1. How do I apply for a new position?</b>
-                                 <br><br>If this is the first time you are applying using our on-line job application, you will need to create an account and select a Username and Password. After your account has been established, you can build an application by clicking on the "Build Job Application" link.<br><a href="https://www.governmentjobs.com/careers/houston"><center>Start Here</center></a></div><br>
+                                 <br><br>If this is the first time you are applying using our on-line job application, you will need to create an account and select a Username and Password. After your account has been established, you can build an application by clicking on the "Build Job Application" link.
+								 <br><a href="javascript:void(0)" onclick="return popupJobApp()"><center>Start Here</center></a></div><br>
                  </td>
             </tr>
            
@@ -19,7 +27,7 @@
                 <td>
                                 <div id="part-info1" align="left" style=""><b>2. What are the COH Employee benefits?</b>
                                  <br><br>Medical, Dental, Vision and Life Insurance. Retirement Plan, FSA, FMLA, LTD, Paid Holidays and Vacations.
-                                 <br><a href=""><center>Benefits</center></a></div><br>
+                                 <br><a href="javascript:void(0)" onclick="return popupBenePage()"><center>Benefits</center></a></div><br>
                 </td>
             </tr>
          
