@@ -76,39 +76,16 @@ input[type=submit] {
               <div style="position: relative;top:-35px" align="center">
                   <img src="kendo/styles/images/image_white_line.png" width="70%" height="5px">
               </div>  
-                      
-         <!--
-         <form align="center">
-         <input type="text" name="search" placeholder="  Search HR Website">
-         <input type="submit" value="Go">
-         </form>
-         -->
-                      
-         <!--
-         <div id="fixedfooter" data-role="footer">
-               <gcse:searchresults></gcse:searchresults>   
-         </div>
-         -->
-                      
-    <!-- Implementing Google Search Engine -->
-    <script>
-       (function() {
-       var cx = '009236601727268289397:v93j178oixy';
-       var gcse = document.createElement('script');
-       gcse.type = 'text/javascript';
-       gcse.async = true;
-       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + 
-                                               '//cse.google.com/cse.js?cx=' + cx;
-       var s = document.getElementsByTagName('script')[0];
-       s.parentNode.insertBefore(gcse, s);
-       })();
-       window.onload = function(){
-       document.getElementById('gsc-i-id1').placeholder = ' ';
-       };
-   </script>
-                                                                              <!--<gcse:search></gcse:search>-->
-     <div align="right" style="position: relative;left:30px;width: 88%;top:-10px"><gcse:searchbox-only></gcse:searchbox-only></div>
 
+                <!--  Text box for search -->
+               <div style="position: relative;top:-10px" align="center">       
+                   <input type="search" id="txtValue" name="value" placeholder="           search HR website" style="width:68%;height:32px;font-size:10pt;border-radius:5px;"/>  
+                   <a href="javascript:void(0)" onclick="return popupGoogSearch()">             
+                         <input type="submit" value="search" style="width:24%;font-size:12pt;position: relative;top:+2px">
+                  </a> 
+              </div>
+    
+               <br>
     <table width="98%" align="center">
         <tr width="100%">
             <td>
@@ -131,12 +108,12 @@ input[type=submit] {
                   </a> 
             </td>
             <td>
-                <a href="javascript: void(0)" onclick="return popupNews()">
+                <a href="javascript:void(0)" onclick="return popupNews()">
                     <img src="kendo/styles/images/button_news.png" width="100%" height="40%">
                 </a>
             </td>
          </tr>
-         <td></td></tr>
+         <tr><td></td></tr>
          <tr width="100%">
             <td>
                  <a href="Resources.html">
@@ -151,8 +128,7 @@ input[type=submit] {
         </tr>
      </table>
            
-     <br>
-           
+                
         <center>
         <!-- side menu navigation -->
         <div id="mySidenav" class="sidenav">
@@ -160,12 +136,12 @@ input[type=submit] {
               <a style="position: relative;top:-25px" href="javascript:void(0)" onclick="popupCOH()"><img src="kendo/styles/images/button_coh_home2.png" width="50%"></a><br>
               <a style="position: relative;top:-30px" href="About.html"><img id="resources" src="kendo/styles/images/button_slidemenu_about.png" width="80%" height="60%"></a>
               <a style="position: relative;top:-40px" href="Help.html"><img id="help" src="kendo/styles/images/button_slidemenu_help.png" width="80%" height="60%"></a> 
-              <a style="position: relative;top:-50px" href="Privacy.html"><img id="settings" src="kendo/styles/images/button_slidemenu_privacy.png" width="78%" height="58%"></a> 
-         </div>
+              <a style="position: relative;top:-50px" href="Privacy.html"><img id="settings" src="kendo/styles/images/button_slidemenu_privacy.png" width="78%" height="58%"></a>
+        </div>
              
              <button data-role="button" onclick="showFeedback()">Provide feedback</button>
-             <a id="Exit" style="visibility:hidden" onclick="AndroidExit()">
-             <font color='white'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exit</b></font></a>
+             <!--<a id="Exit" style="visibility:hidden" onclick="AndroidExit()">
+             <font style='arial' color='white' size='-1'><b><br><br>Exit</b></font></a-->
          </center>
            
     </header>

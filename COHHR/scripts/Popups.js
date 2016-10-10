@@ -99,4 +99,13 @@ function popupCOHHR(url) {
                 return false;
    }
 
+function popupGoogSearch(url){  
+               var element = document.getElementById('txtValue').value;
+               var strWindowFeatures = "resizable=yes,channelmode=yes,fullscreen=yes"
+               newwindow = window.open('https://cse.google.com/cse/publicurl?cx=009236601727268289397:v93j178oixy&q='+element,'GoogSearch',strWindowFeatures);
+               if (window.focus) {newwindow.focus()}
+               return false;                  
+   }
+
+
 
