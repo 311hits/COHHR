@@ -6,8 +6,8 @@
   "DisplayName": "COHHR",
   "Author": "HITS",
   "Description": "COHHR",
-  "BundleVersion": "2.3",
-  "AndroidVersionCode": "2",
+  "BundleVersion": "1.10",
+  "AndroidVersionCode": "5",
   "iOSDeviceFamily": [
     "1"
   ],
@@ -17,7 +17,7 @@
     "remote-notification"
   ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "FrameworkVersion": "4.0.0",
+  "FrameworkVersion": "5.2.0",
   "AndroidPermissions": [
     "android.permission.INTERNAL_SYSTEM_WINDOW",
     "android.permission.INTERNET",
@@ -55,8 +55,6 @@
     }
   },
   "CorePlugins": [
-    "com.phonegap.plugins.PushPlugin@3.2.0",
-    "com.telerik.feedback@2.0.4",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
     "cordova-plugin-console",
@@ -77,7 +75,9 @@
     "cordova-plugin-statusbar",
     "cordova-plugin-vibration",
     "cordova-plugin-whitelist",
-    "org.apache.cordova.labs.keyboard"
+    "org.apache.cordova.labs.keyboard",
+    "com.phonegap.plugins.PushPlugin@3.2.0",
+    "com.telerik.feedback@2.0.4"
   ],
   "iOSDeploymentTarget": "8.0"
 }
