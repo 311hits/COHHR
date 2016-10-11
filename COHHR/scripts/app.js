@@ -87,18 +87,6 @@
             window.event.returnValue = false;
         }
     };
-    
-   /* function onPushNotificationReceived(e) {
-       var str = JSON.stringify(e);
-       var obj = $.parseJSON(str);
-
-     navigator.notification.alert(
-         obj.payload.message, // message
-         alertDismissed, // callback
-         obj.payload.title, // title
-         'Done' // buttonName
-     );
-};  */
 
          /*   var onAndroidPushReceived = function (args) {
             alert('Android notification received: ' + JSON.stringify(args));
@@ -107,18 +95,20 @@
             var onAndroidPushReceived = function (args) {
                 var str = JSON.stringify(args);
                 var obj = $.parseJSON(str);
-                alert(obj.message);
+                alert("COHHR Message: " + obj.message);
             };
 
-
-                
-        var onIosPushReceived = function(args) {
-            alert('iOS notification received: ' + JSON.stringify(args));
-        };
+        var onIosPushReceived = function(args) function (args) {
+                var str = JSON.stringify(args);
+                var obj = $.parseJSON(str);
+                alert("COHHR Message: " + obj.message);
+            };
         
-        var onWP8PushReceived = function (args) {
-            alert('Windows Phone notification received: ' + JSON.stringify(args));
-        };
+        var onWP8PushReceived = function (args) function (args) {
+                var str = JSON.stringify(args);
+                var obj = $.parseJSON(str);
+                alert("COHHR Message: " + obj.message);
+            };
     
 }());
 
@@ -136,7 +126,6 @@ function onButtonDown() {
 }
 }
 
-    
 function closeApp(buttonIndex) {
     if (buttonIndex == 1) {
         navigator.app.exitApp()
