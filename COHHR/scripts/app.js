@@ -39,9 +39,9 @@
                     wp8: {
                         channelName: 'EverlivePushChannel'
                     },
-                    notificationCallbackIOS: onPushNotificationReceived,
-                    notificationCallbackAndroid: onPushNotificationReceived,
-                    notificationCallbackWP8: onPushNotificationReceived
+                    notificationCallbackIOS: onIosPushReceived,
+                    notificationCallbackAndroid: onAndroidPushReceived,
+                    notificationCallbackWP8: onWP8PushReceived
                 };
 
                 everlive.push.register(devicePushSettings, function() {
@@ -88,7 +88,7 @@
         }
     };
     
-    function onPushNotificationReceived(e) {
+   /* function onPushNotificationReceived(e) {
        var str = JSON.stringify(e);
        var obj = $.parseJSON(str);
 
@@ -98,7 +98,27 @@
          obj.payload.title, // title
          'Done' // buttonName
      );
-};
+};  */
+
+         /*   var onAndroidPushReceived = function (args) {
+            alert('Android notification received: ' + JSON.stringify(args));
+             };   */ 
+
+            var onAndroidPushReceived = function (args) {
+                var str = JSON.stringify(args);
+                var obj = $.parseJSON(str);
+                alert(obj.message);
+            };
+
+
+                
+        var onIosPushReceived = function(args) {
+            alert('iOS notification received: ' + JSON.stringify(args));
+        };
+        
+        var onWP8PushReceived = function (args) {
+            alert('Windows Phone notification received: ' + JSON.stringify(args));
+        };
     
 }());
 
