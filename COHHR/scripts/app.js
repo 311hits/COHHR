@@ -39,19 +39,34 @@
                     wp8: {
                         channelName: 'EverlivePushChannel'
                     },
-                    notificationCallbackIOS: onIosPushReceived,
-                    notificationCallbackAndroid: onAndroidPushReceived,
-                    notificationCallbackWP8: onWP8PushReceived
+
+                    notificationCallbackIOS: function (args) {
+                    var str = JSON.stringify(args);
+                    var obj = $.parseJSON(str);
+                    navigator.notification.alert("COH HR Message: " + obj.alert);
+                     },
+
+                    notificationCallbackAndroid: function (args) {
+                    var str = JSON.stringify(args);
+                    var obj = $.parseJSON(str);
+                    alert("COH HR Message: " + obj.message);
+                    },
+
+                    notificationCallbackWP8: function (args) {
+                    var str = JSON.stringify(args);
+                    var obj = $.parseJSON(str);
+                    alert("COH HR Message: " + obj.message);
+                }
+                
                 };
 
                 everlive.push.register(devicePushSettings, function() {
                // alert("Successful registration in Telerik Platform. You are ready to receive push notifications.");
                 }, function(err) {
                     alert("Error: " + err.message);
-                }); 
-                
-                //push notifications code ends here  
-     //    }
+                });                 
+
+                  //push notifications code ends here  //    }
                                
            } 
          bootstrap();
@@ -86,30 +101,13 @@
             window.event.preventDefault && window.event.preventDefault();
             window.event.returnValue = false;
         }
-    };
+    }; 
 
          /*   var onAndroidPushReceived = function (args) {
             alert('Android notification received: ' + JSON.stringify(args));
              };   */ 
 
-            var onAndroidPushReceived = function (args) {
-                var str = JSON.stringify(args);
-                var obj = $.parseJSON(str);
-                alert("COHHR Message: " + obj.message);
-            };
-
-        var onIosPushReceived = function(args) function (args) {
-                var str = JSON.stringify(args);
-                var obj = $.parseJSON(str);
-                alert("COHHR Message: " + obj.message);
-            };
-        
-        var onWP8PushReceived = function (args) function (args) {
-                var str = JSON.stringify(args);
-                var obj = $.parseJSON(str);
-                alert("COHHR Message: " + obj.message);
-            };
-    
+             
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp

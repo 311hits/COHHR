@@ -1,5 +1,3 @@
-'use strict';
-
 // Popup for news
 function popupNews(url) {    
                 newwindow = window.open('http://cohemployeenews.com','News','height=400,width=250');

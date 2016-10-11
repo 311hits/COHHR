@@ -6,8 +6,8 @@
   "DisplayName": "COHHR",
   "Author": "HITS",
   "Description": "COHHR",
-  "BundleVersion": "1.20",
-  "AndroidVersionCode": "7",
+  "BundleVersion": "2.0",
+  "AndroidVersionCode": "20",
   "iOSDeviceFamily": [
     "1",
     "2"
@@ -52,7 +52,7 @@
     "com.telerik.feedback": {
       "API_KEY": "vdrlc9q5d82he4rz",
       "API_URL": "https://platform.telerik.com/feedback/api/v1",
-      "ENABLE_SHAKE": "True"
+      "ENABLE_SHAKE": "False"
     }
   },
   "iOSDeploymentTarget": "8.4",
