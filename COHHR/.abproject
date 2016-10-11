@@ -6,8 +6,8 @@
   "DisplayName": "COHHR",
   "Author": "HITS",
   "Description": "COHHR",
-  "BundleVersion": "1.11",
-  "AndroidVersionCode": "6",
+  "BundleVersion": "1.20",
+  "AndroidVersionCode": "7",
   "iOSDeviceFamily": [
     "1",
     "2"
@@ -55,27 +55,22 @@
       "ENABLE_SHAKE": "True"
     }
   },
+  "iOSDeploymentTarget": "8.4",
   "CorePlugins": [
     "com.phonegap.plugins.PushPlugin@3.2.0",
     "com.telerik.feedback@2.0.4",
     "cordova-plugin-console",
-    "cordova-plugin-contacts",
     "cordova-plugin-device",
     "cordova-plugin-device-motion",
     "cordova-plugin-device-orientation",
     "cordova-plugin-dialogs",
     "cordova-plugin-file",
-    "cordova-plugin-file-transfer",
     "cordova-plugin-geolocation",
     "cordova-plugin-globalization",
     "cordova-plugin-inappbrowser",
-    "cordova-plugin-media",
-    "cordova-plugin-media-capture",
     "cordova-plugin-network-information",
     "cordova-plugin-splashscreen",
-    "cordova-plugin-vibration",
     "cordova-plugin-whitelist",
     "org.apache.cordova.labs.keyboard"
-  ],
-  "iOSDeploymentTarget": "8.4"
+  ]
 }
