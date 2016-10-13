@@ -139,7 +139,7 @@ input[type=submit] {
         </div>
              <br>
              <button data-role="button" onclick="showFeedback()">Provide feedback</button>
-            <a id="Exit" style="visibility:hidden" onclick="AndroidExit()">
+            <a id="Exit" style="visibility:hidden" onclick="AndroodExit()">
              <font style='arial' color='grey' size='-2'><b><br><br>Exit</b></font></a>
        </center>
            
@@ -152,7 +152,7 @@ input[type=submit] {
             <div data-role="tabstrip" id="navigation-container" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
                 <a data-icon="home-e" href="." style="background:url(kendo/styles/images/backgroundcolor.jpg)">Home</a>
                 <a data-icon="search-e" href="Search.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Search</a>
-                <a data-icon="exit-e"  href="#" onclick="androidExit()" style="display:none;background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a>
+                <a data-icon="exit-e"  href="#" onclick="AndroodExit()" style="display:none;background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a>
             </div>
         </div> -->
     
@@ -171,11 +171,11 @@ input[type=submit] {
   <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
     
       <script>
-      var isAndroid = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
-      if (isAndroid) { 
+      var isAndood = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
+      if (isAndood) { 
           document.getElementById("Exit").style.visibility = "visible" ;
       }
-      function AndroidExit(){
+      function AndroodExit(){
                navigator.app.exitApp();
       }
       function showFeedback() {

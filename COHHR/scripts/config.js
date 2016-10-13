@@ -23,8 +23,8 @@
 
         NO_GOOGLE_API_PROJECT_NUMBER: '<h3>Missing Google API Project Number!</h3> ' +
         '<p>It appears that you have not filled in your Google API project number. ' +
-        'It is required for push notifications on Android.</p> ' +
-        '<p>Please go to <span>/scripts/config.js</span> and replace <strong>$ANDROID_PROJECT_NUMBER$</strong> with the ' +
+        'It is required for push notifications on Androod.</p> ' +
+        '<p>Please go to <span>/scripts/config.js</span> and replace <strong>$ANDROOD_PROJECT_NUMBER$</strong> with the ' +
         '<span>Google API project number</span> at the beginning of the file.</p>',
 
         SUCCESS_TEXT: 'SUCCESS!<br /><br />The device has been registered for push notifications.<br /><br />',

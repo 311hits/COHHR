@@ -6,8 +6,8 @@
   "DisplayName": "COHHR",
   "Author": "HITS",
   "Description": "COHHR",
-  "BundleVersion": "2.0",
-  "AndroidVersionCode": "20",
+  "BundleVersion": "2.1",
+  "AndroidVersionCode": "21",
   "iOSDeviceFamily": [
     "1",
     "2"
