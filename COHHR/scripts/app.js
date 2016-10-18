@@ -21,7 +21,7 @@
                navigator.splashscreen.hide(); 
              
                  /* Push notifications Code */
-  //   if (isAndrood) {
+  //   if (isAndroid) {
                 
                 var everlive = new Everlive({
                     appId: 'vdrlc9q5d82he4rz',
@@ -46,7 +46,7 @@
                     navigator.notification.alert("COH HR Message: " + obj.alert);
                      },
 
-                    notificationCallbackAndrood: function (args) {
+                    notificationCallbackAndroid: function (args) {
                     var str = JSON.stringify(args);
                     var obj = $.parseJSON(str);
                     alert("COH HR Message: " + obj.message);
@@ -103,7 +103,7 @@
         }
     }; 
 
-         /*   var onAndroodPushReceived = function (args) {
+         /*   var onAndroidPushReceived = function (args) {
             alert('Notification received: ' + JSON.stringify(args));
              };   */ 
 

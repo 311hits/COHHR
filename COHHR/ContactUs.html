@@ -2,6 +2,16 @@
 <html>
     <head>
         <title>CONTACT US</title>
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/Popups.js"></script>
+    <script src="components/home/index.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
+    
     </head>
     <body style="background-color: #e4e4e4">
         <br>
@@ -41,7 +51,7 @@
             <tr>
             <td> 
 						<figure align="center">
-							<a href="" onClick="window.open('https://www.facebook.com/groups/COHEmployeeNews/', '_blank')">
+							<a style="text-decoration: none" href="javascript: void(0)" onclick="return popupFacebook()">
 								<img src="kendo/styles/images/facebook.jpg" alt=""  width="60%" height="60%" />
 							</a>
                             <div id="wrapper-part-info">
@@ -51,7 +61,7 @@
             </td>
              <td>					
 						<figure align="center">
-							<a href="" onClick="window.open('https://twitter.com/cohemployeenews', '_blank')">
+							<a style="text-decoration: none" href="javascript: void(0)" onclick="return popupTwitter()">
 								<img src="kendo/styles/images/twitter.jpg" alt=""  width="80%" height="80%" />
 							</a>
                             <div id="wrapper-part-info">

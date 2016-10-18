@@ -6,14 +6,13 @@
   "DisplayName": "COHHR",
   "Author": "HITS",
   "Description": "COHHR",
-  "BundleVersion": "2.1",
-  "AndroidVersionCode": "21",
+  "BundleVersion": "2.3",
+  "AndroidVersionCode": "23",
   "iOSDeviceFamily": [
     "1",
     "2"
   ],
   "iOSBackgroundMode": [
-    "location",
     "fetch",
     "remote-notification"
   ],
@@ -65,7 +64,6 @@
     "cordova-plugin-device-orientation",
     "cordova-plugin-dialogs",
     "cordova-plugin-file",
-    "cordova-plugin-geolocation",
     "cordova-plugin-globalization",
     "cordova-plugin-inappbrowser",
     "cordova-plugin-network-information",

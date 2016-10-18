@@ -1,11 +1,10 @@
-// Popup for news
+
 function popupNews(url) {    
                 newwindow = window.open('http://cohemployeenews.com','News','height=400,width=250');
                 if (window.focus) {newwindow.focus()}
                 return false;
    }
 
-// Popup for training
 function popupLDC(url) {    
                 newwindow = window.open('http://houstontx.gov/ldc','LDC','height=400,width=250');
                 if (window.focus) {newwindow.focus()}
@@ -24,7 +23,6 @@ function popupESS(url) {
                 return false;
    }
 
-// Popup for resources
 function popupBenefits(url) {    
                 newwindow = window.open('http://www.houstontx.gov/hr/benefits.html','Benefits','height=400,width=250');
                 if (window.focus) {newwindow.focus()}
@@ -113,6 +111,18 @@ function popupJobApp(url) {
 
 function popupBenePage(url) {    
                 newwindow = window.open('http://www.houstontx.gov/hr/benefits.html','BenePage','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
+
+function popupFacebook(url) {    
+                newwindow = window.open('https://www.facebook.com/groups/COHEmployeeNews/','Facebook','height=400,width=250');
+                if (window.focus) {newwindow.focus()}
+                return false;
+   }
+
+function popupTwitter(url) {    
+                newwindow = window.open('https://twitter.com/cohemployeenews','Twitter','height=400,width=250');
                 if (window.focus) {newwindow.focus()}
                 return false;
    }

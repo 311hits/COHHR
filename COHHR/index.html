@@ -38,14 +38,12 @@ input[type=submit] {
 }
 </style>
     
-    <!-- Scripts -->
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/config.js"></script>
     <script src="scripts/Popups.js"></script>
-    <!--<script src="scripts/register.js"></script>-->
     <script src="components/home/index.js"></script>
     <script src="https://bs-static.cdn.telerik.com/latest/everlive.all.js"></script>
     
@@ -127,7 +125,6 @@ input[type=submit] {
         </tr>
      </table>
            
-                
         <center>
         <!-- side menu navigation -->
         <div id="mySidenav" class="sidenav">
@@ -139,7 +136,7 @@ input[type=submit] {
         </div>
              <br>
              <button data-role="button" onclick="showFeedback()">Provide feedback</button>
-            <a id="Exit" style="visibility:hidden" onclick="AndroodExit()">
+            <a id="Exit" style="visibility:hidden" onclick="AndroidExit()">
              <font style='arial' color='grey' size='-2'><b><br><br>Exit</b></font></a>
        </center>
            
@@ -147,19 +144,8 @@ input[type=submit] {
    
 <div data-role="footer" style="background:url(kendo/styles/images/backgroundcolor.jpg)" align="center"></div>  
     
-    <!-- Footer Tabstrip 
-        <div data-role="footer">
-            <div data-role="tabstrip" id="navigation-container" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
-                <a data-icon="home-e" href="." style="background:url(kendo/styles/images/backgroundcolor.jpg)">Home</a>
-                <a data-icon="search-e" href="Search.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Search</a>
-                <a data-icon="exit-e"  href="#" onclick="AndroodExit()" style="display:none;background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a>
-            </div>
-        </div> -->
-    
     </div>
-    
-    <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+   
     <style>
        p.small {
           line-height: 110%;
@@ -168,14 +154,13 @@ input[type=submit] {
           line-height: 200%;
        }
    </style> 
-  <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
     
       <script>
       var isAndood = kendo.support.mobileOS && kendo.support.mobileOS.device == 'android';
       if (isAndood) { 
           document.getElementById("Exit").style.visibility = "visible" ;
       }
-      function AndroodExit(){
+      function AndroidExit(){
                navigator.app.exitApp();
       }
       function showFeedback() {
